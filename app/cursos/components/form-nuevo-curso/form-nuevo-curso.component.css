@@ -1,0 +1,69 @@
+.container-form {width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  color: #002653;}
+
+  .container-form h2{text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #ffc107;
+    font-size: 2em;}
+
+    .container-form h3{ align-items: flex-end;
+      font-size: 1em;
+      margin-bottom: 40px;
+      color: #002653;}
+
+      .mat-mdc-raised-button
+ {background-color: orange !important;
+}
+.container-form .boton {margin: 20px auto;
+  text-align: center;
+  color: #fff;
+}
+
+.span-congratulations{color:#ffc107;
+  text-align: center;
+  align-items: center;
+  margin: 40px 0px;
+font-size: 1.5em;
+font-weight: 500;
+}
+
+.info
+{border: 1px solid grey;
+margin-bottom: 40px;}
+
+.container-info{ width: 50%;
+text-align: center;
+margin: auto;
+border-left: 1px solid grey;}
+
+.container-info p{margin-left: 30px;}
+
+
+.contenedor-img{border-right: 1px solid rgba(0, 0, 0, 0.2);
+  width: 30%;
+  height: 200px;
+  }
+
+
+.contenedor-img img
+{width: 100%;
+  object-fit: cover;
+}
+.example-margin {
+  margin: 10px;
+}
+
+.selec{border: 1px solid grey !important;}
+
+.container-form button{ color: #ffff;
+border: 1px solid orange;
+padding: 10px;
+background-color: orange;
+font-family:  'Assistant', sans-serif;
+font-size: 1.3em;
+}

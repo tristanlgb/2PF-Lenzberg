@@ -1,0 +1,16 @@
+{
+  "users":[
+    { "usuario": "Candela_Salvatto",
+      "contraseña": "12345678",
+      "admin": true
+    },
+    { "usuario": "Monica_Salvatto",
+    "contraseña": "12345678",
+    "admin": false
+  },
+  { "usuario": "Emilia_Pesaresi",
+  "contraseña": "12345678",
+  "admin": false
+}
+  ]
+}

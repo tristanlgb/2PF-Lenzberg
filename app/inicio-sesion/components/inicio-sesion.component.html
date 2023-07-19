@@ -1,0 +1,30 @@
+
+<router-outlet></router-outlet>
+<div class="container-all">
+<div class="container-form">
+  <h1> INICIAR SESION</h1>
+  <form [formGroup]="formulario" (ngSubmit)="iniciarSesion()">
+    <div class="row">
+      <div class="col-md12">
+        <mat-form-field appearance="outline" class="apariencia">
+          <mat-label>Usuario</mat-label>
+          <input matInput type="text" title="user" formControlName="usuario">
+        </mat-form-field>
+      </div>
+      <div class="col-md12">
+        <mat-form-field appearance="outline" class="apariencia">
+          <mat-label>Contraseña</mat-label>
+          <input matInput type="password" title="password" formControlName="contrasena">
+        </mat-form-field>
+      </div>
+      <div class="col-md2 boton" >
+      <button mat-raised-button type="submit">INGRESAR</button>
+      </div>
+      </div>
+  </form>
+</div>
+<div class="container-img">
+<img src="" alt="img">
+</div>
+</div>
+

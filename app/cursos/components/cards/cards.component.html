@@ -1,0 +1,22 @@
+<div class="spinner" *ngIf="loadind$ | async">
+  <mat-spinner color="accent"></mat-spinner>
+</div>
+<div class="container">
+  <h1>Conocé nuestros cursos</h1>
+  <h2>¡Porqué elegir nuestros cursos?</h2>
+
+</div>
+<div class="card" *ngIf="!(loadind$ | async)">
+  <div class="card-body tarjeta" *ngFor="let curso of cursos$ | async">
+    <mat-card class="color-card">
+        <mat-card-header class="align">
+          <mat-card-title>{{curso.titulo}}</mat-card-title>
+        </mat-card-header>
+      <mat-card-content class="align"> Duración {{curso.duracion}}. Modalidad {{curso.modalidad}}</mat-card-content>
+      <mat-card-content class="align" [ngClass]="curso.cupo ? 'cupo-abierto' :'cupo-cerrado' ">{{curso.cupo | formatoBooleano: 'INSCRIPCIONES ABIERTAS' : 'INSCRIPCIONES CERRADAS' }}</mat-card-content>
+      <mat-card-actions class="align">
+        <button mat-flat-button> IR AL CURSO</button>
+      </mat-card-actions>
+    </mat-card>
+    </div>
+  </div>

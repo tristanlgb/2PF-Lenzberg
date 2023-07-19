@@ -1,0 +1,55 @@
+<h1 mat-dialog-title>EDITAR CURSO: {{curso.titulo}} </h1>
+<div mat-dialog-content>
+<div class="container-form">
+  <form [formGroup]="formulario" (ngSubmit)="editarCurso()">
+    <div class="row">
+
+    <div class="col-md-3">
+      <label  for="inputCurso" class="form-label">Curso</label>
+      <input  matInput formControlName="titulo" id="inputCurso" title="label">
+    </div>
+
+    <div class="col-md-3">
+      <label  for="inputModalidad" class="form-label">Modalidad</label>
+      <input matInput formControlName="modalidad"  title="label" id="inputModalidad">
+    </div>
+
+    <div class="col-md-3">
+      <label  for="inputDuracion" class="form-label">Duración</label>
+      <input matInput formControlName="duracion"  id="inputDuracion" title="label">
+    </div>
+
+    <div class="col-md-3">
+      <mat-card-content>Cupo abierto</mat-card-content>
+      <mat-slide-toggle formControlName="cupo" class="example-margin"></mat-slide-toggle>
+    </div>
+
+    <mat-form-field class="col-md-3"  appearance="fill">
+      <label  for="inputProfesor" class="form-label">Nombre del Profesor</label>
+    <mat-select formControlName="profesor" class="selec" >
+      <mat-option *ngFor="let profesor of profesor$ | async" [value]="profesor">{{profesor.nombre}}</mat-option>
+    </mat-select>
+    </mat-form-field>
+
+    <div class="col-md-3">
+      <label  for="inputClases" class="form-label"> Clases semanales</label>
+      <input matInput formControlName="clasesSemanales" type="number" class="form-control" id="inputClases" title="label">
+    </div>
+
+    <div class="col-md-3">
+      <label  for="inputInicio" class="form-label">Fecha de inicio</label>
+      <input matInput [matDatepicker]="fechaInicio" formControlName="fechaInicio" type="date"  id="inputInicio" title="label">
+      <mat-datepicker-toggle matSuffix [for]="fechaInicio"></mat-datepicker-toggle>
+      <mat-datepicker #fechaInicio></mat-datepicker>
+    </div>
+
+  </div>
+  </form>
+
+</div>
+</div>
+
+<div mat-dialog-actions align="end">
+  <button matDialogClose mat-raised-button>Cerrar</button>
+  <button mat-raised-button color="primary" (click)="editarCurso()">Editar</button>
+</div>

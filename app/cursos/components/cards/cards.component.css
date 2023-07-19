@@ -1,0 +1,54 @@
+.tabla {width: 80%;
+  margin: auto;}
+
+
+
+  .color-card{background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);}
+
+  .card {width: 70%;
+  margin: 10px auto;
+border-color: transparent;}
+
+
+  .align {margin:5px auto;}
+
+  .mat-mdc-unelevated-button:not(:disabled) {
+    background-color: orange;
+}
+
+.color-card[_ngcontent-bir-c50] {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.card-body {color:#002653}
+
+.cupo-abierto{color: orange;
+font-weight: 600;
+font-size: 1.1em;}
+.cupo-cerrado{color:grey ;
+  font-weight: 600;
+  font-size: 1.1em}
+
+  .spinner{width: 100px;
+  margin: 300px auto;}
+
+  .container {width: 80%;
+  margin: 50px auto;}
+
+  .container h1 {text-align: center;
+  color: orange;
+font-size: 4em;
+margin-bottom: 20px;
+font-weight: 500;
+font-family: 'Assistant', sans-serif;}
+
+.container h2 {color: #002653;
+text-align: center;
+font-size: 1.5em;
+font-family: 'Assistant', sans-serif;}
+
+.container p {color: #002653;
+text-align: justify;
+font-size: 1.2em;
+font-family: 'Assistant', sans-serif;}

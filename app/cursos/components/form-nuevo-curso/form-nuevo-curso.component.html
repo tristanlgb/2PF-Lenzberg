@@ -1,0 +1,59 @@
+
+<div class="container-form">
+  <hr>
+  <h2>Lorem ipsum dolor sit.</h2>
+  <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, nihil reprehenderit? Enim!</h3>
+  <div class="info">
+    <div class="contenedor text-center d-flex justify-content-between align-items-center">
+      <div class="contenedor-img d-flex justify-content-evenly">
+    <img src="../../../../assets/images/SNC.png" alt="img">
+    </div>
+    <div class="container-info">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora assumenda quos modi aperiam eos explicabo illum corrupti, temporibus laborum perspiciatis ratione dolores repellat nihil veniam magnam iste accusamus harum. Alias fuga, facilis consequatur temporibus tempore in debitis, nam quis sunt placeat expedita. Et tenetur officia obcaecati doloribus expedita dolores!</p>
+</div>
+</div>
+</div>
+  <form class="row g-6" [formGroup]="formCursoNuevo"(ngSubmit)="agregarCurso()">
+<div class="col-md-3">
+  <label  for="inputTitulo" class="form-label">Titulo del Curso</label>
+  <input formControlName="titulo" type="text" class="form-control" id="inputTitulo">
+
+</div>
+<div class="col-md-3">
+  <label  for="inputModalidad" class="form-label">Modalidad del Curso</label>
+  <input formControlName="modalidad" type="text" class="form-control" id="inputModalidad">
+
+</div>
+<div class="col-md-3">
+  <label  for="inputDuracion" class="form-label">Duración del Curso</label>
+  <input formControlName="duracion" type="text" class="form-control" id="inputDuracion">
+
+</div>
+<div class="col-md-3">
+  <mat-card-header>Cupo abierto</mat-card-header>
+  <mat-slide-toggle formControlName="cupo" class="example-margin"></mat-slide-toggle>
+</div>
+<div class="col-md-3">
+  <label  for="inputProfesor" class="form-label">Nombre del Profesor</label>
+<mat-select formControlName="profesor" class="selec">
+  <mat-option *ngFor="let profesor of profesor$ | async" [value]="profesor" apparence="fill">{{profesor.nombre}}</mat-option>
+</mat-select>
+
+</div>
+<div class="col-md-3">
+  <label  for="inputClases" class="form-label">Cantidad de clases semanales</label>
+  <input formControlName="clasesSemanales" type="number" class="form-control" id="inputClases">
+
+</div>
+<div class="col-md-3">
+  <label  for="inputInicio" class="form-label">Fecha de inicio</label>
+  <input formControlName="fechaInicio" type="date" class="form-control" id="inputInicio">
+
+</div>
+<div class="span-congratulations">{{spanCongratulations}}</div>
+<div class="col-12 boton">
+<button id="agregarCurso" mat-raised-button type="submit">AGREGAR CURSO</button>
+</div>
+  </form>
+  <hr>
+</div>

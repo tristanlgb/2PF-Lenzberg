@@ -1,0 +1,22 @@
+<mat-toolbar class="toolbar">
+  <span class="example-spacer"></span>
+  <a mat-button routerLink="inicio">INICIO🏠</a>
+
+
+  <a mat-button routerLink="formacion/cards">CURSOS👓</a>
+  <a mat-button routerLink="formacion/enseña-con-nosotros">FORMACION📚</a>
+
+  <a mat-button routerLink="tabla-de-socios">INTEGRANTES👩‍❤️‍👩</a>
+
+  <span class="example-spacer"></span>
+<ng-container>
+  <a *ngIf="!(sesionActiva$ | async)" mat-button class="boton-sesion" routerLink="inicio-sesion">Iniciar Sesion🐕</a>
+  <a *ngIf= "sesionActiva$ | async" mat-button class="boton-sesion" (click)="cerrarSesion()" >Cerrar Sesion🐻</a>
+</ng-container>
+  <button matbutton class="example-icon" (click)="irInicio()" aria-label="Example icon-button with share icon"><img class="logo" src="../assets/images/logo.png" alt="inicio" title="inicio"> </button>
+</mat-toolbar>
+<router-outlet></router-outlet>
+
+
+
+

@@ -1,0 +1,31 @@
+.tabla {width: 100%;
+margin:30px auto;
+}
+
+
+
+.mdc-data-table__header-cell {
+  color: black;
+}
+
+.mdc-data-table__cell {
+  color: black;
+}
+
+.mat-mdc-table {
+  background-color: white;
+}
+
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border-color: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid;
+}
+
+.spinner{width: 100px;
+  margin: 300px auto;}

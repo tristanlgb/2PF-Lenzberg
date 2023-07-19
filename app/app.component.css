@@ -1,0 +1,25 @@
+* {
+  font-family: 'Assistant', sans-serif;
+}
+
+.mat-toolbar {
+  background-color: #002653;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.logo {
+  width: 20px;
+}
+
+.example-icon {
+  border: none;
+  background-color: transparent;
+}
+
+.boton-sesion {
+  font-size: 0.6em;
+  margin: 30px;
+}
