@@ -1,0 +1,26 @@
+<div class="section-alumnos">
+  <p>
+    <button class="btn btn-primary mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+      ALUMNOS
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample1">
+    <div class="card card-body fs-1" id="placeholder-alumno">
+      <ul *ngFor=" let Alumno of listaAlumnos">
+        <li> {{Alumno.nombre +" "+ Alumno.apellido}}</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>
+    <button class="btn btn-primary mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+      Lorem
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample2">
+    <div class="card card-body fs-1" id="placeholder-alumno">
+      <ul *ngFor=" let Alumno of listaAlumnos">
+        <li *ngIf="Alumno.socio === true"> {{Alumno.nombre +" "+ Alumno.apellido}} <span>SOCIO</span></li>
+      </ul>
+    </div>
+  </div>
